@@ -38,3 +38,11 @@ else if(num2>num3){
 else {
     console.log(num3)
 }
+
+
+
+
+//  5 reverse a number
+
+var num = "5655"
+console.log(num.split('').reverse().join(''))
