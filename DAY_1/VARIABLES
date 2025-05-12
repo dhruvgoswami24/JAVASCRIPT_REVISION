@@ -1,0 +1,33 @@
+//  1 . Declare a variable for your name using var and print it.
+
+
+var dhruvGoswami;
+console.log(dhruvGoswami);
+
+
+// 2. Use let to declare a variable for your age and increase it by 1.
+
+let age = 21;
+age+= 1;
+console.log(age)
+
+
+// 3. Use const to declare a constant for the value of Pi and try changing it (observe error).
+
+const Pi = 22.7;
+Pi = 23.7
+console.log(Pi)
+
+
+//  4. Create two variables using let for firstName and lastName and concatenate them.
+
+let firstName = "Dhruv"
+let lastName = "Goswami"
+let fullName = firstName + lastName ; 
+console.log(fullName)
+
+
+//  5. Use var to declare a variable and re-declare it.
+
+var a;
+var a;
