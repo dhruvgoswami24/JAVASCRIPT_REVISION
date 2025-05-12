@@ -1,0 +1,62 @@
+//  1. Declare a string, number, and boolean variable and print their types using typeof.
+
+var name = "dhruv";
+var what = true; 
+var num = 45;
+console.log(typeof(name))
+console.log(typeof(what))
+console.log(typeof(num))
+
+
+//  2. Convert a number to a string using String() and print its type.
+
+var num = 45;
+var fnum = String(num);
+console.log(typeof(fnum))
+
+
+
+
+//  3. Convert a string "123" to a number using Number() and add 10.
+
+
+var num = "123"
+var fnum = Number(num)+10
+console.log(fnum)
+
+
+
+
+//  4. Create an object with your details (name, age, city).
+
+
+var obj = {
+    name: "dhruv", 
+    age : 22,
+    city:"bhopal"
+}
+console.log(obj.city)
+console.log(obj.name)
+console.log(obj.age)
+
+
+
+
+//  5.Create an array of 5 favorite colors and access the 3rd element.
+
+var arr = ["red","blue" , "green", "yellow","white"]
+console.log(arr[2])
+
+
+
+
+//  6.Write a function that returns a value. Check its type.
+
+function add(){
+    return 4;
+}
+console.log(typeof(add()));
+console.log(add());
+
+
+
