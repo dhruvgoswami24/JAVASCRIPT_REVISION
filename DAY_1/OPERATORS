@@ -1,0 +1,47 @@
+//  1.Add, subtract, multiply, divide two numbers.
+
+
+var num1 = 5
+var num2 = 10
+console.log(num1+num2);
+console.log(num1-num2);
+console.log(num1*num2);
+console.log(num1/num2);
+
+
+
+
+//  2 Use ++ and -- on a variable and print the result each time.
+
+var num = 5 
+console.log(num++)
+console.log(++num)
+console.log(num--)
+console.log(--num)
+
+
+//  3 Find remainder and exponentiation of two numbers.
+
+
+var num = 70
+var num2 = 100 
+console.log(`the remainder is ${num2 % num}`)
+console.log(`the exponentiation is ${num2 ** num}`)
+
+
+// 4 Use ++ and -- on a variable and print the result each time.
+
+// 5 Use assignment operators (+=, *=, etc.) to update a variable.
+
+// 6 Compare two numbers using all comparison operators (==, ===, !=, !==, <, >, <=, >=).
+
+// 7 Use logical operators (&&, ||, !) in different conditions.
+
+// 8 Write an expression that combines arithmetic and logical operators.
+
+// 9 Use ternary operator to check if a number is even or odd.
+
+// 10 Swap two numbers without using a third variable (with operators).
+
+// 11 Check if a number is divisible by 3 and 5 using operators.
+
