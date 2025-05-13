@@ -1,0 +1,76 @@
+//Problem 7: Weekday Name
+//Input a number (1–7), print the corresponding weekday using switch.
+
+
+
+let b = prompt("enter a number from 1 to 7")
+switch(b){
+case '1': console.log("monday")
+break;
+case '2':console.log("Tuesday")
+break;
+case '3':console.log("WED")
+break;
+case '4':console.log("Thursday")
+break;
+case '5':console.log("Friday")
+break;
+case '6':console.log("SAT")
+break;
+default : console.log("Sunday")
+break;
+}
+
+
+
+
+//Problem 8: Calculator
+//Input two numbers and an operator (+, -, *, /, %) and perform calculation using switch.
+
+let a = prompt("enter a calci sign")
+let b = Number( prompt("enter number 1 :"))
+let c = Number( prompt("enter number 2 :"))
+
+switch(a){
+    case "+" : console.log(b+c)
+    break;
+     case "-" : console.log(b-c)
+    break;
+     case "*" : console.log(b*c)
+    break;
+     case "/" : console.log(b/c)
+    break;
+     case "%" : console.log(b%c)
+    break;
+}
+
+
+
+
+
+Problem 9: Month Days
+Input a month number (1–12), print number of days in that month. (Ignore leap years)
+
+
+
+function getDaysInMonth(month) {
+    switch(month) {
+        case 1: // January
+        case 3: // March
+        case 5: // May
+        case 7: // July
+        case 8: // August
+        case 10: // October
+        case 12: // December
+            return 31;
+        case 4: // April
+        case 6: // June
+        case 9: // September
+        case 11: // November
+            return 30;
+        case 2: // February
+            return 28; // Ignore leap years
+        default:
+            return "Invalid month number"; // For invalid input
+    }
+}
