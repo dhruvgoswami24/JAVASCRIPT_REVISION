@@ -1,0 +1,33 @@
+//Problem 1: Sign Checker
+// Take a number from the user and print whether it’s positive, negative, or zero.
+
+
+var num = Number(prompt("enter a number"))
+if(num>0){
+    console.log("its a positive")
+}
+else if(num<0){
+    console.log("its a negative")
+}
+else {
+    console.log("its a 0")
+}
+
+
+
+
+
+////Problem 2: Voting Eligibility
+//Check if a person is eligible to vote (age >= 18).
+
+var age = Number(prompt("enter your age"))
+if(age>=18){
+    console.log("you are eligible for voting")
+}
+else{
+    console.log("bhag saale !")
+}
+
+
+
+
