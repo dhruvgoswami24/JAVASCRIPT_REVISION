@@ -1,0 +1,29 @@
+//Problem 4: Even or Odd
+//Check if a number is even or odd using a ternary operator.
+
+
+var a = Number(prompt("enter"))
+var b = (a%2===0)?"its even":"its odd"; 
+console.log(b)
+
+
+
+
+//Problem 5: Absolute Value
+//Print the absolute value of a number using a ternary operator.
+
+let num = -42;
+let absValue = num >= 0 ? num : -num;
+console.log("Absolute value:", absValue); // Output: Absolute value: 42
+
+
+
+
+//Problem 6: Min of Two Numbers
+//Find the smaller of two numbers using a ternary operator.
+
+let a = 40
+let b = 90
+let c = (a>b)?a:b; 
+console.log(c)
+
