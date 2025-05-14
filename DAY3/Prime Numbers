@@ -1,0 +1,72 @@
+//5.1 Check whether a number is prime.
+
+let num = parseInt(prompt("Enter a number:"));
+let isPrime = true;
+
+if (num <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+if (isPrime) {
+    console.log(`${num} is a prime number.`);
+} else {
+    console.log(`${num} is not a prime number.`);
+}
+
+
+
+
+//5.2 Print all prime numbers between 1 and 100.
+for (let num = 2; num <= 100; num++) {
+    let isPrime = true;
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(num);
+    }
+}
+
+
+
+
+//5.3 Find the nth prime number.
+
+
+
+
+
+
+//5.4 Count how many prime numbers are there between 1 and n.
+
+let n = parseInt(prompt("Enter the value of n:"));
+let count = 0;
+
+for (let num = 2; num <= n; num++) {
+    let isPrime = true;
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        count++;
+    }
+}
+
+console.log(`There are ${count} prime numbers between 1 and ${n}.`);
