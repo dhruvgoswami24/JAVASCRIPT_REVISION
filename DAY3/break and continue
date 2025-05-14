@@ -1,0 +1,43 @@
+//2.1 Print numbers from 1 to 10, skipping multiples of 3 using continue.
+
+for(i=1; i<=10 ; i++){
+    if(i%3===0){
+        continue;
+    }
+    else{
+        console.log(i)
+    }
+}
+
+
+//2.2 Print numbers from 1 to 100, but stop when the number reaches 42 using break.
+
+for(i=1; i<=100; i++){
+    if(i===42){
+        console.warn("i ki value 42 hogyi h ")
+        break;
+    }
+    else{
+        console.log(i)
+    }
+}
+
+
+
+
+//2.3 Find and print the first prime number greater than 100 using a loop with break.
+
+ for(i=101; ; i++){
+     let isPrime=true;
+     for(j=2 ; j<Math.sqrt(i);j++){
+         if(i%j===0){
+             isPrime = false;
+             break;         
+         }        
+     }
+      if(isPrime){
+     console.log(`first number which is prime after 100 is ${i}`)
+     break;
+ }
+ }
+
