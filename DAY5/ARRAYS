@@ -90,3 +90,38 @@ const nums4 = nums2.concat(nums3)
 console.log(nums4)
 
 
+
+
+
+
+🟨 3. Looping Through Arrays
+Practice Questions:
+
+Use a for loop to print each element in [10, 20, 30].
+
+Use a for...of loop to calculate the sum of [1, 2, 3, 4, 5].
+
+Use forEach() to print each fruit in ["apple", "banana", "mango"] with its index.
+
+
+
+
+
+
+🟪 4. Practice Problems (Combining Concepts)
+Reverse an array
+Write a function reverseArray(arr) that reverses [1, 2, 3, 4] → [4, 3, 2, 1] without using .reverse().
+
+Sum of elements
+Write a function sumArray(arr) that returns the sum of [5, 10, 15] → 30.
+
+Remove duplicates
+Write a function removeDuplicates(arr) that removes duplicates from [1, 2, 2, 3, 4, 4, 5] → [1, 2, 3, 4, 5].
+
+Merge and sort
+Merge two arrays [3, 1] and [2, 4], then sort the final array.
+
+Find the maximum element
+Write a function findMax(arr) to return the maximum number in [5, 7, 2, 10, 3].
+
+
