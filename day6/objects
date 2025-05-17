@@ -1,0 +1,175 @@
+
+    // 1. Create, Access, Modify Objects
+
+Problems:
+//	1.	Create a car object with properties: brand, model, year. Log each property.
+//	2.	Add a new property color to the object.
+//	3.	Update the year to a new value.
+//	4.	Delete the model property.
+//	5.	Write a function printObject(obj) that logs all key-value pairs using a loop.
+
+
+var car = {
+    brand: "maruti", 
+    model:"vxi",
+    year:2004
+}
+
+console.log(car.brand)
+console.log(car.model)
+console.log(car.year)
+
+//adding new prop
+car.age=4 
+console.log(car)
+
+delete car.model;
+console.log(car)
+
+function printObject(obj) {
+  console.log("Here are the details:");
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const value = obj[key];
+      console.log(`- ${capitalize(key)}: ${value}`);
+    }
+
+
+
+
+
+    // 2. Methods Inside Objects
+
+// Problems:
+// 	1.	Add a method start() to the car object that logs: “Car started”.
+// 	2.	Add a method getSummary() that returns a string summarizing the car (e.g. "Brand: Honda, Year: 2020").
+// 	3.	Create a calculator object with methods: add(a, b), subtract(a, b), multiply(a, b), divide(a, b).
+
+// ⸻
+
+const car = {
+     brand: 'maruti',
+     model: 'vxi', 
+     year: 2004,
+     age: 4,
+     start(){
+            console.log("Car started") 
+     },
+     getSummary(){
+         console.log(`Brand: ${this.brand} , model: ${this.model} , year: ${this.year}`)
+     }
+}
+
+
+
+
+car.getSummary()
+
+  }
+}
+
+
+
+
+// 
+// 3. this Keyword Basics
+
+// Problems:
+// 	1.	Create a person object with name, age, and a method introduce() that uses this to return "Hi, I'm John and I'm 25 years old."
+// 	2.	Explain what this refers to in the introduce() method.
+// 	3.	Add a nested object inside person (e.g. address with city) and add a method in it using this—observe how this behaves differently.
+// 	4.	Convert a regular method to an arrow function and explain how this changes.
+
+//⸻
+
+  
+const person = {
+   name:"dhurv",
+   age: 22,
+   introduce(){
+       console.log(`hi , i am ${this.name} and i am ${this.age} years old`)
+   },
+   address : {
+       city:"vidisha",
+       showcity : ()=>{
+           return(`hi  i am  from ${this.city}`)
+       }
+   }
+} 
+
+
+
+
+// 4. Practice: Student Grade System
+
+// Problems:
+// 	1.	Create a student object with name, marks (array of numbers).
+// 	2.	Add a method calculateAverage() to compute the average mark.
+// 	3.	Add a method getGrade() to return:
+// 	•	"A" if average >= 90
+// 	•	"B" if average >= 75
+// 	•	"C" if average >= 60
+// 	•	"F" otherwise
+
+// ⸻
+
+
+const student = {
+    name: "dhruv",
+    marks:[22,25,30,60,100],
+    calculateAverage: function(){
+          let avg = 0;
+        for(i=0;i<(this.marks).length;i++){
+          avg = avg+this.marks[i];
+        }
+        let total = avg/5
+        return total;
+    }
+}
+console.log(student. calculateAverage())
+
+
+
+
+// 5. Practice: Count Character Frequency
+
+// Problems:
+// 1\.	Write a function countFrequency(str) that returns an object with character frequencies.     countFrequency("hello")
+// // { h: 1, e: 1, l: 2, o: 1 }   Modify it to ignore spaces and be case-insensitive.
+// 3\.	Add a method getMostFrequent() that returns the character with the highest frequency.
+
+
+
+
+
+  function countFrequency(str) {
+  const freq = {};
+
+  // Convert to lowercase and remove spaces
+  const cleanStr = str.toLowerCase().replace(/\s/g, '');
+
+  for (let char of cleanStr) {
+    freq[char] = (freq[char] || 0) + 1;
+  }
+
+  // Add method to get most frequent character
+  freq.getMostFrequent = function () {
+    let maxChar = null;
+    let maxCount = 0;
+
+    for (let char in this) {
+      // Skip the method itself
+      if (typeof this[char] === 'function') continue;
+
+      if (this[char] > maxCount) {
+        maxCount = this[char];
+        maxChar = char;
+      }
+    }
+
+    return maxChar;
+  };
+
+  return freq;
+}
+
