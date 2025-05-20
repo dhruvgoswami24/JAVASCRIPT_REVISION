@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--     
+  ✅ Input
+Create a text input. As the user types (on input), display the typed text in real time in a <p> tag. -->
+
+    <input type="text" id="text">
+    <p id="realText"></p>
+
+<!-- Create an input box that shows how many characters are typed, updating live. -->
+
+  <div id="count"></div>
+
+
+   <!-- Change
+Create a dropdown. When the selected value changes, display the selected option below it. -->
+
+<select id="dropdown">
+  <option value="">-- Select a fruit --</option>
+  <option value="Apple">Apple</option>
+  <option value="Banana">Banana</option>
+  <option value="Mango">Mango</option>
+</select>
+
+<div id="output"></div>
+
+<!-- Create a checkbox. Show a message when the checkbox is checked or unchecked. -->
+
+<label >
+    <input type="checkbox"  id="checkbox">Check my github
+</label>
+<p id="checkmsg"></p>
+
+<!-- Create a simple form with name and email fields. On submission, prevent page reload and log the values.
+
+Show an alert saying "Form submitted!" when a form is submitted.
+
+ 2. Form Validation Basics
+Create a form with username and password inputs.
+
+Username must be at least 4 characters.
+
+Password must be at least 6 characters.
+
+Show error messages below each field if invalid.
+
+Disable the submit button until both fields are valid.
+
+Validate an email field:
+
+If the input doesn't match an email format, show "Enter a valid email".
+
+Add a confirm password field. On submit, check if both passwords match. If not, show an error.
+
+Highlight invalid fields with a red border using JS. -->
+
+
+   <form action="" id="form">
+        <input type="text" id="uname" placeholder="Name"><br>
+        <input type="email" id="mail" placeholder="@Email"><br>
+        <input type="password" id="pass" placeholder="password"><br>
+        <input type="password" id="confirmpass" placeholder="confirm password"><br>
+        <button type="submit">Submit</button>
+          </form>
+
+        <!--
+🔹 3. Practice: Signup Form Validation (Mini Project)
+Build a full signup form with:
+Name (required)
+
+Email (must be valid)
+
+Password (min 6 chars)
+
+Confirm password (must match)
+
+Age (must be a number > 13)
+
+👉 Tasks:
+15. Show inline error messages for each invalid field.
+16. Prevent form submission if any field is invalid.
+17. Show a success message like “Signup successful!” after valid submission.
+18. Reset form on successful submit.
+19. Add real-time validation feedback (as the user types). -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
